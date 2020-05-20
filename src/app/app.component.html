@@ -1,0 +1,40 @@
+<div id="content">
+  <h1>
+    COVID 19 TRACKER
+  </h1>
+  <label><h2>Country :</h2> </label>
+  <select
+    id="selectBox"
+    class="custom-select"
+    (change)="getCountry($event.target.value)"
+  >
+    <option value="">Select</option>
+
+    <option *ngFor="let country of countries" value="{{ country.Slug }}">{{
+      country.Country
+    }}</option>
+  </select>
+  <br />
+  <br />
+  <button id="but" class="btn btn-primary" (click)="getCoronaData()">Get Data</button>
+  <br />
+  <br />
+  <div id="cards">
+    <div class="cards">
+      <i class="fas fa-virus"></i>
+      <h1>Confirmed Cases <br> <br>{{ confirmed }}</h1>
+    </div>
+    <div class="cards">
+      <i class="fas fa-lungs-virus"></i>
+      <h1>Active Cases <br> <br>{{ active }}</h1>
+    </div>
+    <div class="cards">
+      <i class="fas fa-virus-slash"></i>
+      <h1>Recovered Cases <br> <br> {{ recovered }}</h1>
+    </div>
+    <div class="cards">
+      <i class="fas fa-head-side-virus"></i>
+      <h1>Death Cases <br> <br>{{ deaths }}</h1>
+    </div>
+  </div>
+</div>

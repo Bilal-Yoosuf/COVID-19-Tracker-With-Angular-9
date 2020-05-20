@@ -1,0 +1,52 @@
+#content{
+    color: white;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#selectBox{
+    width: 80vw;
+    margin:30px  ;
+    box-shadow: 20px 20px 20px black;
+    font-size: larger;
+    
+}
+#content h1{
+    margin: 20px;
+}
+h2{
+    margin-left: 10px;
+}
+.cards{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    /* background-image: linear-gradient(to bottom right,black,green); */
+   box-shadow: 20px 20px 20px black;
+}
+#cards h1{
+    font-size: x-large;
+}
+#cards i{
+    font-size: 2rem;
+}
+#cards div:nth-child(1){
+    background:linear-gradient(135deg, #2a0394 0%,#bb1010 100%);
+}
+#cards div:nth-child(4){
+    background:linear-gradient(135deg, #f70505f3 0%,#0e0701da 100%);
+}
+#cards div:nth-child(3){
+    background:linear-gradient(135deg, #0ee418 0%,#4d0316 100%);
+}
+#cards div:nth-child(2){
+    background:linear-gradient(135deg, #f52509 0%,#5a060d7e 100%);
+}
+#but{
+    font-size: x-large;
+    box-shadow: 10px 10px 10px black;
+}
